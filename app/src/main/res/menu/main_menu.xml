@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search By Product..."
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/sorting"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/export"
+        android:title="Export Files"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/setting"
+        android:title="Settings"
+        app:showAsAction="collapseActionView" />
+
+</menu>

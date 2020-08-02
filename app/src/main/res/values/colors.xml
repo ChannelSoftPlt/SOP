@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#F06023</color>
+    <color name="black">#000000</color>
+    <color name="transparent_black">#3E000000</color>
+    <color name="grey">#C4373131</color>
+    <color name="green">#38D43E</color>
+    <color name="success">#40037BFB</color>
+    <color name="pending">#4072DA0C</color>
+    <color name="warning">#FF060E</color>
+    <color name="orange">#FF9800</color>
+    <color name="transparent">#00000000</color>
+    <color name="line_black">#26000000</color>
+    <color name="edit_text_background">#E6E6E6</color>
+    <color name="dark_green">#3DB842</color>
+    <!-- Here you can add color of your choice  -->
+    <color name="action_bar_dark">#26769B</color>
+    <color name="action_bar_medium">#429599</color>
+    <color name="action_bar_light">#319A62</color>
+
+</resources>

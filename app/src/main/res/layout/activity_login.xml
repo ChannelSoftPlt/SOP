@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="obj"
+            type="com.channelsoft.sop.object.UserObject" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_login_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="50dp"
+                android:src="@drawable/sop_logo" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/activity_login_custom_edit_text"
+                    android:elevation="5dp">
+
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/activity_login_custom_edit_text"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:text="@={obj.email}"
+                        android:textColor="@color/grey"
+                        android:textColorHint="#767676" />
+
+                    <ImageView
+                        android:id="@+id/clear"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="17dp"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="15dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/activity_login_custom_edit_text"
+                    android:elevation="5dp">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:background="@drawable/activity_login_custom_edit_text"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:text="@={obj.password}"
+                        android:textColor="@color/grey"
+                        android:textColorHint="#767676" />
+
+                    <ImageView
+                        android:id="@+id/show_password"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="17dp"
+                        android:src="@drawable/activity_login_show_icon" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:onClick="forgotPassword"
+                    android:padding="5dp"
+                    android:text="Forgot Password"
+                    android:textColor="@color/grey" />
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginTop="?actionBarSize"
+                    android:background="@drawable/activity_login_custom_button"
+                    android:fontFamily="@string/font_family_condensed"
+                    android:onClick="checking"
+                    android:text="Sign In"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateBehavior="repeat"
+                    android:indeterminateTint="@color/green"
+                    android:indeterminateTintMode="src_in"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/activity_login_version_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="All Right Reserved By CHANNEL SOFT PLT"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</layout>
